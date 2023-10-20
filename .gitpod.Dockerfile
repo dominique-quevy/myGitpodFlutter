@@ -17,14 +17,14 @@ ENV PATH="$HOME/flutter/bin:$PATH"
 #        fonts-noto-cjk \
 #    && update-java-alternatives --set java-1.8.0-openjdk-amd64
 
- Make some changes for our vnc client and flutter chrome
+# Make some changes for our vnc client and flutter chrome
  RUN sed -i 's|resize=scale|resize=remote|g' /opt/novnc/index.html \
      && _gc_path="$(command -v google-chrome)" \
      && rm "$_gc_path" && printf '%s\n' '#!/usr/bin/env bash' \
                                          'chromium --start-fullscreen "$@"' > "$_gc_path" \
      && chmod +x "$_gc_path" 
 
-# Insall flutter and dependencies
+# Install flutter and dependencies
 USER gitpod
 RUN wget -q "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}.tar.xz" -O - \
     | tar xpJ -C "$HOME" \
