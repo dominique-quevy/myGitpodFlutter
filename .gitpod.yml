@@ -1,3 +1,4 @@
+---
 # start with
 # https://gitpod.io/#/https://github.com/dominique-quevy/myGitpodFlutter
 # https://gitpod.io/#prebuild/https://github.com/dominique-quevy/myGitpodFlutter
@@ -89,29 +90,28 @@
 # To install the app, make sure you are logged in to Gitpod beforehand.
 # After installing the app, configure it using the .gitpod.yml in the default branch:
 
-github:
-  prebuilds:
+# !!!!! deprecated configuration=> changed by \schemas\gitpod-schema.json !!!!!
+# github:
+#  prebuilds:
     # enable for the master/default branch (defaults to true)
-    master: true
-    # enable for all branches in this repo (defaults to false)
-    branches: true
-    # enable for pull requests coming from this repo (defaults to true)
-    pullRequests: true
-    # enable for pull requests coming from forks (defaults to false)
-    pullRequestsFromForks: true
-    # add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
-    addComment: true
-    # add a "Review in Gitpod" button to pull requests (defaults to false)
-    addBadge: false
-    # add a label once the prebuild is ready to pull requests (defaults to false)
-    addLabel: prebuilt-in-gitpod
+#    master: true
+# enable for all branches in this repo (defaults to false)
+#    branches: true
+# enable for pull requests coming from this repo (defaults to true)
+#    pullRequests: true
+# enable for pull requests coming from forks (defaults to false)
+#    pullRequestsFromForks: true
+# add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
+#    addComment: true
+# add a "Review in Gitpod" button to pull requests (defaults to false)
+#    addBadge: false
+# add a label once the prebuild is ready to pull requests (defaults to false)
+#    addLabel: prebuilt-in-gitpod
+# !!!!! !!!!!
+
 # More information
 # You can find more information at https://docs.gitpod.io
-
-
 # -------------------------------------------------------------------------------
-
-
 # GitPod Flutter TEMPLATE
 # https://www.gitpod.io/docs/introduction/getting-started/quickstart/flutter
 
@@ -185,10 +185,10 @@ tasks:
 ports:
   - port: 5900
     onOpen: ignore
-    # vnc
+# vnc
   - port: 6080
     onOpen: open-preview
-    # flutter
+# flutter
   - port: 8080
     onOpen: ignore
   - port: 5037
@@ -201,3 +201,4 @@ ports:
 vscode:
   extensions:
     - dart-code.flutter
+    - dart-code.dart-code
