@@ -43,7 +43,7 @@ tasks:
         rm -f /workspace/.template_init
         flutter create --project-name gitpod_flutter_quickstart .
       } fi
-      flutter build -v linux
+      # flutter build -v linux
       flutter build -v web
 
       ### If you want to build for android, consider uncommenting the below lines
