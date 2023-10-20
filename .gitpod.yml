@@ -1,3 +1,112 @@
+# https://www.gitpod.io/docs/introduction/getting-started/quickstart/flutter
+
+# Flutter Quickstart
+# Learn how to set-up and understand the benefits of Gitpod in less than 5 min with our Flutter template.
+
+# The following guide will:
+
+# Walk you through a real world example with an existing Gitpod config
+# Introduce you to prebuilds
+# Demonstrate the benefits of ephemeral developer environments
+# For simplicity we use a GitHub template, but Gitpod works similarly with GitLab and Bitbucket.
+
+# Step 1: Clone Git repository
+# Create a new repository based on the Flutter template.
+# Name it e.g. my-flutter-template.
+# Step 2: Install Gitpod app
+# Install the Gitpod App.
+
+# Gitpod’s GitHub app is similar to a CI server and will continuously prepare prebuilds for all your branches and pull requests - so you don’t have to wait for installation of dependencies from the internet when you want to start coding.
+
+# Step 3: First prebuild
+# Start your first workspace with a prebuild by prefixing https://gitpod.io#prebuild/ to the URL of the repository.
+# The revised URL is: https://gitpod.io/#prebuild/https://github.com/<github_username>/my-flutter-template
+
+# Gitpod displays the prebuild progress status by running the init commands in the .gitpod.yml file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see prebuilds.
+
+# Step 4: Enjoy being ready-to-code 🤙
+# Once the first prebuild ran, Gitpod starts an automated and fully configured developer environment in a workspace that is now ready for you to develop.
+
+# Other developers made their setup even more productive and supercharged their workflows with the following quick steps:
+
+# Installing the browser extension
+# You can install the Gitpod browser extension on any Chromium-based browsers such as Microsoft Edge, Brave, Chrome, and others, or on a Firefox browser.
+
+# The extension simply adds a Gitpod button on every project and branch across GitHub, and Bitbucket that prefixes the URL with gitpod.io/# so that you can easily open a new workspace from any Git context.
+
+# Browser Extension
+
+# If you prefer to not install browser extensions then you can use the Gitpod browser bookmarklet instead.
+
+# For our partner GitLab we have a native integration into their UI that you can enable here.
+
+# Add your favorite VS Code themes and extensions
+# You have access to all Visual Studio Code extensions published under the vendor neutral Open VSX registry. Install one by clicking the Extensions icon in the left sidebar and enter your favorite theme or VS Code extension.
+
+# Changes you make in your workspace such as themes and extensions are synced automatically to other workspaces.
+
+# Start throwing away workspaces like paper towels
+# You can now start to treat dev environments as automated resources you spin up when you need them and close down (and forget about) when you are done with your task. Dev environments become fully ephemeral.
+
+# You even can start switching between workspaces or open several workspaces on the same context - two for your feature, one for reviewing a PR/MR, one for a bug, one for another MR/PR.
+
+# Try it out and open 3 workspaces on the same context (e.g. on main or on an issue). 🤓
+
+# Next Steps
+# You’ve successfully ran your first workspace and experienced first hand what we mean with ephemeral dev environments. This is just the first step on your journey towards being always ready to code. Helpful resources from here are:
+
+# Getting started with your own project
+# Git Integrations
+
+
+# -------------------------------------------------------------------------------
+
+
+# https://github.com/settings/installations
+
+# gitpod.io (installed in github as application)
+# Installed 19 minutes ago  Developed by gitpod-io  https://www.gitpod.io
+# Always ready to code - spin up fresh, automated dev environments for each task, in the cloud, in seconds.
+
+# How it works
+
+# Gitpod is an open-source Kubernetes application for automated and ready-to-code development environments that blends in your existing workflow. It enables you to describe your dev environment as code and start instant and fresh development environments for each new task directly from your browser.
+# It can be started on any GitHub URL by prefixing it with gitpod.io#.
+
+# Gitpod Bot does two things:
+
+# generate Gitpod links for pull requests and add them to the description,
+# prebuild workspaces for branches and pull requests.
+# Installation
+# To install the app, make sure you are logged in to Gitpod beforehand.
+# After installing the app, configure it using the .gitpod.yml in the default branch:
+
+github:
+  prebuilds:
+    # enable for the master/default branch (defaults to true)
+    master: true
+    # enable for all branches in this repo (defaults to false)
+    branches: true
+    # enable for pull requests coming from this repo (defaults to true)
+    pullRequests: true
+    # enable for pull requests coming from forks (defaults to false)
+    pullRequestsFromForks: true
+    # add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
+    addComment: true
+    # add a "Review in Gitpod" button to pull requests (defaults to false)
+    addBadge: false
+    # add a label once the prebuild is ready to pull requests (defaults to false)
+    addLabel: prebuilt-in-gitpod
+# More information
+# You can find more information at https://docs.gitpod.io
+
+
+# -------------------------------------------------------------------------------
+
+
+# GitPod Flutter TEMPLATE
+# https://www.gitpod.io/docs/introduction/getting-started/quickstart/flutter
+
 image:
   file: .gitpod.Dockerfile
 tasks:
