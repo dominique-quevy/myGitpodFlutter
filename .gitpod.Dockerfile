@@ -1,9 +1,12 @@
-FROM gitpod/workspace-full-vnc:2022-07-20-05-50-58
+# FROM gitpod/workspace-full-vnc:2022-07-20-05-50-58
+FROM gitpod/workspace-full-vnc:latest
 SHELL ["/bin/bash", "-c"]
 # ENV ANDROID_HOME=$HOME/androidsdk \
 #    FLUTTER_VERSION=3.0.2-stable \
 #    QTWEBENGINE_DISABLE_SANDBOX=1
-ENV FLUTTER_VERSION=3.13.8-stable \
+# ENV FLUTTER_VERSION=3.13.8-stable \
+#    QTWEBENGINE_DISABLE_SANDBOX=1
+ENV FLUTTER_VERSION=3.16.2-stable \
     QTWEBENGINE_DISABLE_SANDBOX=1
 # ENV PATH="$HOME/flutter/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"
 ENV PATH="$HOME/flutter/bin:$PATH"
