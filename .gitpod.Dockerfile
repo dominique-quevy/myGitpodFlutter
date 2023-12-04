@@ -30,7 +30,8 @@ ENV PATH="$HOME/flutter/bin:$PATH"
 # Install flutter and dependencies
 #            https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.16.2-stable.tar.xz
 USER gitpod
-RUN wget -q "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}.tar.xz" -O - \
+RUN rm -R "$HOME/flutter" \
+    && wget -q "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}.tar.xz" -O - \
     | tar xpJ -C "$HOME" \
     # && _file_name="commandlinetools-linux-8092744_latest.zip" && wget "https://dl.google.com/android/repository/$_file_name" \
     # && unzip "$_file_name" -d $ANDROID_HOME \
