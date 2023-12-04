@@ -28,6 +28,7 @@ ENV PATH="$HOME/flutter/bin:$PATH"
 #     && chmod +x "$_gc_path" 
 
 # Install flutter and dependencies
+#            https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.16.2-stable.tar.xz
 USER gitpod
 RUN wget -q "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}.tar.xz" -O - \
     | tar xpJ -C "$HOME" \
